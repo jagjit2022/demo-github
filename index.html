@@ -2,9 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hello world</title>
+    <title>For Loop Example</title>
 </head>
 <body>
-    Hello world
+    <div id="output"></div>
+    <script>
+        const output = document.getElementById('output');
+        let html = '<ul>';
+        for (let i = 1; i <= 5; i++) {
+            html += `<li>Loop iteration ${i}</li>`;
+        }
+        html += '</ul>';
+        output.innerHTML = html;
+    </script>
 </body>
 </html>
